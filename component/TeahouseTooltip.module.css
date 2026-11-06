@@ -1,0 +1,96 @@
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  pointer-events: none;
+  user-select: none;
+  container-type: inline-size;
+  will-change: transform;
+}
+
+.paper {
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+  filter: drop-shadow(3px 7px 5px rgb(30 19 12 / 20%));
+}
+
+.outline {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.copy {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 240px;
+  padding: 34px 13% 72px;
+  text-align: center;
+  color: #241b16;
+  overflow-wrap: anywhere;
+}
+
+.copy > p {
+  flex-shrink: 0;
+  max-width: 100%;
+  margin: 0;
+}
+
+.eyebrow {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  color: #513c30;
+}
+
+.title {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  font-size: clamp(28px, 12cqw, 42px);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-wrap: balance;
+  color: #17110e;
+  -webkit-text-stroke: 0.6px #241b16;
+  text-shadow:
+    1px 1px 0 #a67552,
+    2px 2px 0 #a67552,
+    3px 3px 0 #956747,
+    4px 4px 0 #956747,
+    5px 5px 0 #956747,
+    6px 6px 0 rgb(81 60 48 / 20%);
+}
+
+.description {
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: clamp(12px, 3.8cqw, 13px);
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  color: #513c30;
+  text-wrap: pretty;
+}
+
+.hint {
+  font-family: "Songti SC", "STSong", "SimSun", serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  color: #513c30;
+}
